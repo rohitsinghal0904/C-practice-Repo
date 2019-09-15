@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main ()
+{
+
+	int fahrenheit=98.40;
+	float celsius;
+    celsius = (5.0/9.0)*(fahrenheit-32);
+	printf ("The converted temperature is %0.2f\n", celsius);
+
+	return 0;
+
+}
