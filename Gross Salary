@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    float basic=1, gross, da, hra;
+    printf("Enter basic salary of an employee: ");
+    scanf("%f", &basic);
+    if(basic <=4000)
+    {
+        da  = basic * 50.0;
+        hra = basic * 10.0;
+    }
+    else if(basic <=8000)
+    {
+        da  = basic * 60.0;
+        hra = basic * 20.0;
+    }
+    else if(basic <=12000)
+    {
+        da  = basic * 70.0;
+        hra = basic * 25.0;
+    }
+    else
+    {
+        da  = basic * 80.0;
+        hra = basic * 30.0;
+    }
+    gross = basic + hra + da;
+    printf("GROSS SALARY OF EMPLOYEE = %.2f", gross);
+    return 0;
+}
